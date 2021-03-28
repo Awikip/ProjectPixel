@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: stretch;
+  padding-left: 1rem;
+  width: 100%;
+  flex-direction: row;
+  background-color: black;
+}
+
+h1 {
+  padding-top: 1rem;
+}

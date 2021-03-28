@@ -15,15 +15,10 @@
 }
 
 .box > div {
-  background-color: #f1f1f1;
+  background-color: red;
   width: 46%;
   margin: 1rem;
   padding: 1rem;
-}
-
-.select-box {
-  background-color: #808080;
-  width: 80%;
 }
 
 html, body {
