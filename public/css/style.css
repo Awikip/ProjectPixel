@@ -1,166 +1,35 @@
-html, body {
-    font-family: "Press Start 2P";
-    font-size: 11px;
+.header {
+  display: flex;
+  align-items: stretch;
+  padding: 0rem;
+  width: 100%;
+  flex-direction: row;
 }
 
 .box {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  margin: 2rem;
-  padding: 1rem;
   width: 100%;
+  flex-direction: row;
 }
 
-.is-position {
-  width: 31%;
+.box > div {
+  background-color: #f1f1f1;
+  width: 46%;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.nes-container {
-  border-color: black;
-  border-style: solid;
-  border-width: 4px;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  &.is-centered {
-    text-align: center;
-  }
-
-  &.is-right {
-    text-align: right;
-  }
-
-  &.with-title {
-    > .title {
-      display: table;
-      padding: 0 0.5rem;
-      margin: -1.8rem 0 1rem;
-      font-size: 1rem;
-      background-color: $background-color;
-    }
-
-    &.is-centered {
-      > .title {
-        margin: -2rem auto 1rem;
-      }
-    }
-
-    &.is-right {
-      > .title {
-        margin: -2rem 0 1rem auto;
-      }
-    }
-  }
-
-  &.is-dark {
-    position: relative;
-    margin: $border-size;
-    color: $background-color;
-    background-color: $base-color;
-    border-color: white;
-
-    &::after {
-      position: absolute;
-      top: -$border-size * 1.8;
-      right: -$border-size * 1.8;
-      bottom: -$border-size * 1.8;
-      left: -$border-size * 1.8;
-      z-index: -1;
-      content: "";
-      background-color: $base-color;
-    }
-
-    &.with-title {
-      > .title {
-        color: $background-color;
-        background-color: $base-color;
-      }
-    }
-  }
-
-  &.is-rounded {
-    width: 45%;
-    @include rounded-corners();
-    padding: 1rem 1.5rem;
-    margin: $border-size;
-
-    &.with-title {
-      > .title {
-        margin-top: -1.5rem;
-      }
-
-      &.is-centered {
-        > .title {
-          margin: -1.5rem auto 1rem;
-        }
-      }
-
-      &.is-right {
-        > .title {
-          margin: -1.5rem 0 1rem auto;
-        }
-      }
-    }
-
-    &.is-dark {
-      @include rounded-corners(true);
-      &::after {
-        content: none;
-      }
-
-      &.with-title {
-        > .title {
-          margin-top: -1.3rem;
-        }
-
-        &.is-centered {
-          > .title {
-            margin: -1.3rem auto 1rem;
-          }
-        }
-
-        &.is-right {
-          > .title {
-            margin: -1.3rem 0 1rem auto;
-          }
-        }
-      }
-    }
-  }
+html, body {
+  font-family: "Press Start 2P";
+  font-size: 11px;
 }
 
-.nes-container.with-title>.title {
-    display: table;
-    padding: 0 .5rem;
-    margin: -1.5rem 0 0.5rem;
-    font-size: 1rem;
-    background-color: #fff;
+p {
+  font-size: 8px;
 }
 
-.nes-btn {
-    border-image-slice: 2;
-    border-image-width: 2;
-    border-image-repeat: stretch;
-    border-image-source: url(data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>);
-    border-image-outset: 2;
-    position: relative;
-    display: inline-block;
-    padding: 6px 8px;
-    margin: 4px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #212529;
-    background-color: #fff;
-    float:right;
-}
-
-.btn-char {
-  float:left;
+h1 {
+  padding-left: 1rem;
 }
