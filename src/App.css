@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html, body, button {
+  font-family: "Press Start 2P";
+  font-size: 11px;
+  color: #BF0F61;
+  background-color: #102940;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  flex-direction: row;
+}
+
+.box > div {
+  background-color: #D9D9D9;
+  border-style: ridge;
+  border-color: #F26BAA;
+  width: 46%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: #003F63;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

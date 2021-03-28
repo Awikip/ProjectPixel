@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import lahksa from './images/lahksa.gif';
+import Header from './Header.js';
+import Charbox from './Charbox.js';
+import Statsbox from './Statsbox.js';
+import Eqbox from './Eqbox.js';
+import Compbox from './Compbox.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className="box">
+        <Charbox/>
+        <Statsbox/>
+        <Eqbox/>
+        <Compbox/>
+      </div>
     </div>
   );
 }

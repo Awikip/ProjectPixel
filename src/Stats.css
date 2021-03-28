@@ -1,0 +1,17 @@
+dt {
+  padding-top: 1.5rem;
+  padding-bottom: 1.2rem;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats-counter {
+  padding-left: 33%;
+}
+
+.stats {
+  padding-left: 5%;
+}
