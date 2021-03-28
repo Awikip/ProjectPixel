@@ -21,13 +21,32 @@
   padding: 1rem;
 }
 
+.select-box {
+  background-color: #808080;
+  width: 80%;
+}
+
 html, body {
   font-family: "Press Start 2P";
   font-size: 11px;
 }
 
 p {
-  font-size: 8px;
+  font-size: 10px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+}
+
+dt {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+dl {
+  padding-right: 5rem;
 }
 
 h1 {
