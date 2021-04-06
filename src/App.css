@@ -3,8 +3,10 @@
 html, body, button {
   font-family: "Press Start 2P";
   font-size: 11px;
-  color: #BF0F61;
-  background-color: #102940;
+  color: white;
+  background-image: url('../src/images/city.png');
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .App {
@@ -46,21 +48,45 @@ html, body, button {
   }
 }
 
-.box {
+.test-box {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100%;
   flex-direction: row;
 }
 
-.box > div {
-  background-color: #D9D9D9;
+.top-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.top-box > div {
   border-style: ridge;
   border-color: #F26BAA;
   width: 46%;
   margin: 1rem;
   padding: 1rem;
+  background: rgb(60, 60, 60);
+  background: rgba(60, 60, 60, 0.5);
+}
+
+.bottom-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.bottom-box > div {
+  border-style: ridge;
+  border-color: #F26BAA;
+  width: 29.48%;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgb(60, 60, 60);
+  background: rgba(60, 60, 60, 0.5);
 }
 
 button {
