@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-html, body, button {
+html, body {
   font-family: "Press Start 2P";
   font-size: 11px;
-  color: #BF0F61;
-  background-color: #102940;
+  color: white;
+  background-image: url('../src/images/city.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
@@ -46,24 +48,43 @@ html, body, button {
   }
 }
 
-.box {
+.top-box {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100%;
   flex-direction: row;
+  width: 100%;
 }
 
-.box > div {
-  background-color: #D9D9D9;
+.top-box > div {
+  border-top: solid #F26BAA;
+  border-bottom: 30px solid transparent;
+  border-image: url('../src/images/Border3.png') 0 0 80 0 round round;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgb(60, 60, 60);
+  background: rgba(60, 60, 60, 0.5);
+}
+
+.bottom-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottom-box > div {
   border-style: ridge;
-  border-color: #F26BAA;
-  width: 46%;
+  border-color: #B46FC5;
   margin: 1rem;
   padding: 1rem;
+  background: rgb(216, 191, 216);
+  background: rgba(216, 191, 216, 0.3);
 }
 
 button {
+  font-family: "Press Start 2P";
   background-color: #003F63;
   color: white;
   padding: 5px 10px;
@@ -72,4 +93,58 @@ button {
   font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+@media only screen and (min-width:320px)  {
+  .bottom-box > div {
+    width: 100%;
+  }
+  .top-box > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:481px)  {
+  .bottom-box > div {
+    width: 100%;
+  }
+  .top-box > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:641px)  {
+  .bottom-box > div {
+    width: 100%;
+  }
+  .top-box > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:961px)  {
+  .bottom-box > div {
+    width: 100%;
+  }
+  .top-box > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .bottom-box > div {
+    width: 100%;
+  }
+  .top-box > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:1281px) {
+  .bottom-box > div {
+    width: 29.48%;
+  }
+  .top-box > div {
+    width: 46%;
+  }
 }
