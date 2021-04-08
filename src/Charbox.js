@@ -1,13 +1,19 @@
-import lahksa from './images/lahksa.gif';
+import './Charbox.css';
 
 function Charbox() {
   return (
     <div>
       <h4>Select your character</h4>
-      <img src={lahksa} width="30%" />
+      <div className="slide">
+        <img src="https://via.placeholder.com/200x300" alt="placeholder" />
+      </div>
       <p>
-        <button type="button">Next</button>
-        <button type="button">Back</button>
+        <button>
+          &lt;
+        </button>
+        <button>
+          &gt;
+        </button>
       </p>
     </div>
   );

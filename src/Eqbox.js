@@ -6,8 +6,12 @@ function Eqbox() {
       <h4>Select your equipment</h4>
       <img src={lahksa} width="18%" />
       <p>
-        <button type="button">Next</button>
-        <button type="button">Back</button>
+        <button>
+          &lt;
+        </button>
+        <button>
+          &gt;
+        </button>
       </p>
     </div>
   );
