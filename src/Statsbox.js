@@ -4,16 +4,18 @@ import './Stats.css';
 
 export default function StatList(props) {
   const [currentAmount, setCurrentAmount] = useState(0);
+  const [strengthAmount, setStrengthAmount] = useState(0);
+  const [staminaAmount, setStaminaAmount] = useState(0);
   const stats = [
     {
       id: 1,
       name: 'Strength',
-      amount: currentAmount
+      amount: strengthAmount
     },
     {
       id: 2,
       name: 'Stamina',
-      amount: currentAmount
+      amount: staminaAmount
     },
     {
       id: 3,
@@ -42,6 +44,22 @@ export default function StatList(props) {
     },
   ];
 
+  function addStrength() {
+    setStrengthAmount(strengthAmount+1)
+  }
+
+  function subtractStrength() {
+    setStrengthAmount(strengthAmount-1)
+  }
+
+  function addStamina() {
+    setStrengthAmount(strengthAmount+1)
+  }
+
+  function subtractStamina() {
+    setStrengthAmount(strengthAmount-1)
+  }
+
   function add() {
     setCurrentAmount(currentAmount+1)
   }
@@ -54,9 +72,9 @@ export default function StatList(props) {
     <div>
       <h4>Select your stats</h4>
       <div className="stats-container">
-        <ul>
+        <p>
           {stats.map(stat => (
-            <li key={stat.id}>
+            <p key={stat.id}>
               <div className="stats-name">
                 {stat.name}
               </div>
@@ -64,12 +82,12 @@ export default function StatList(props) {
                 {stat.amount}
               </div>
               <div>
-                <button className="stats-button" onClick={add}>+</button>
-                <button className="stats-button" onClick={subtract}>-</button>
+                <button className="stats-button" onClick={addStrength}>+</button>
+                <button className="stats-button" onClick={subtractStrength}>-</button>
               </div>
-            </li>
+            </p>
           ))}
-        </ul>
+        </p>
       </div>
     </div>
   );
