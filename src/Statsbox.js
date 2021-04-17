@@ -12,7 +12,8 @@ function Statsbox() {
             <dt>Stamina</dt>
             <dt>Intelligence</dt>
             <dt>Dexterity</dt>
-            <dt>Tech</dt>
+            <dt>Hacking</dt>
+            <dt>Charisma</dt>
           </dl>
         </p>
         </div>
@@ -37,10 +38,15 @@ function Statsbox() {
             <button type="button">+</button>
             <button type="button">-</button>
           </p>
+          <p>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
         </div>
         <div class="stats">
           <p>
             <dl>
+              <dt>0 - 10</dt>
               <dt>0 - 10</dt>
               <dt>0 - 10</dt>
               <dt>0 - 10</dt>

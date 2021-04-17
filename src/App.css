@@ -9,61 +9,20 @@ html, body {
   background-size: cover;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .top-box {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
   flex-direction: row;
-  width: 100%;
 }
 
 .top-box > div {
   border-top: solid #F26BAA;
   border-bottom: 30px solid transparent;
-  border-image: url('../src/images/Border3.png') 0 0 80 0 round round;
-  padding: 1rem;
+  border-image: url('../src/images/Border4.png') 0 0 80 0 round round;
+  padding: 3rem;
   margin: 1rem;
-  background: rgb(60, 60, 60);
-  background: rgba(60, 60, 60, 0.5);
+  background: rgb(216, 191, 216);
+  background: rgba(216, 191, 216, 0.2);
 }
 
 .bottom-box {
@@ -71,7 +30,6 @@ html, body {
   flex-wrap: wrap;
   align-items: stretch;
   flex-direction: row;
-  width: 100%;
 }
 
 .bottom-box > div {
@@ -93,6 +51,10 @@ button {
   font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+button:active {
+  background: #F26BAA;
 }
 
 @media only screen and (min-width:320px)  {
@@ -145,6 +107,6 @@ button {
     width: 29.48%;
   }
   .top-box > div {
-    width: 46%;
+    width: 43%;
   }
 }
