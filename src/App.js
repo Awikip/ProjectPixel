@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import lahksa from './images/lahksa.gif';
 import city from './images/city.png';
 import Header from './Header.js';
-import Charbox from './Charbox.js';
+import Charselect from './Charbox.js';
 import Statsbox from './Statsbox.js';
 import Eqbox from './Eqbox.js';
 import Compbox from './Compbox.js';
@@ -14,7 +13,9 @@ function App() {
     <div>
       <Header/>
       <div className="top-box">
-        <Charbox/>
+        <Charselect images={[
+          lahksa, city
+        ]}/>
         <Statsbox/>
       </div>
       <div className="bottom-box">
