@@ -1,7 +1,7 @@
 const Migrations = artifacts.require("Migrations");
-const PixelCharacterGenerator = artifacts.require("PixelCharacterGenerator");
+const PixelCharacterGeneratorV2 = artifacts.require("PixelCharacterGeneratorV2");
 
 module.exports = function (deployer) {
   deployer.deploy(Migrations);
-  deployer.deploy(PixelCharacterGenerator);
+  deployer.deploy(PixelCharacterGeneratorV2);
 };
