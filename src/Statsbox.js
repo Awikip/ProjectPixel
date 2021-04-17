@@ -1,63 +1,55 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './Stats.css';
 
-function Statsbox() {
+export default function StatList(props) {
+  const stats = [
+    {
+      id: 1,
+      name: 'Strength',
+    },
+    {
+      id: 2,
+      name: 'Stamina',
+    },
+    {
+      id: 3,
+      name: 'Intelligence',
+    },
+    {
+      id: 4,
+      name: 'Dexterity',
+    },
+    {
+      id: 5,
+      name: 'Tech',
+    },
+    {
+      id: 6,
+      name: 'Charisma',
+    },
+    {
+      id: 7,
+      name: 'Barter',
+    },
+  ];
+
   return (
     <div>
-      <h4>Select your stats </h4>
-      <div class="stats-container">
-        <div>
-        <p>
-          <dl>
-            <dt>Strength</dt>
-            <dt>Stamina</dt>
-            <dt>Intelligence</dt>
-            <dt>Dexterity</dt>
-            <dt>Hacking</dt>
-            <dt>Charisma</dt>
-          </dl>
-        </p>
-        </div>
-        <div class="stats-counter">
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-          <p>
-            <button type="button">+</button>
-            <button type="button">-</button>
-          </p>
-        </div>
-        <div class="stats">
-          <p>
-            <dl>
-              <dt>0 - 10</dt>
-              <dt>0 - 10</dt>
-              <dt>0 - 10</dt>
-              <dt>0 - 10</dt>
-              <dt>0 - 10</dt>
-              <dt>0 - 10</dt>
-            </dl>
-          </p>
-        </div>
+      <h4>Select your stats</h4>
+      <div className="stats-container">
+        <ul>
+          {stats.map(stat => (
+            <li key={stat.id}>
+              <div className="stats-name">
+                {stat.name}
+                <button className="stats-button">+</button>
+                <button className="stats-button">-</button>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 }
-
-export default Statsbox;
