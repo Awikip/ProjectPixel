@@ -33,6 +33,7 @@ export default function Charselect({images=[]}){
 
   return (
   <div>
+    <h4>Select your character</h4>
     <div style={currentSlideStyle} className="slide-holder" />
     <div className="slideshow-controller">
       <button onClick={previous}>

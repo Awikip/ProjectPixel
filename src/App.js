@@ -3,7 +3,7 @@ import lahksa from './images/lahksa.gif';
 import city from './images/city.png';
 import Header from './Header.js';
 import Charselect from './Charbox.js';
-import Statsbox from './Statsbox.js';
+import StatList from './Statsbox.js';
 import Eqbox from './Eqbox.js';
 import Compbox from './Compbox.js';
 import Cornerbox from './Cornerbox.js';
@@ -15,8 +15,8 @@ function App() {
       <div className="top-box">
         <Charselect images={[
           lahksa, city
-        ]}/>
-        <Statsbox/>
+        ]} />
+        <StatList />
       </div>
       <div className="bottom-box">
         <Eqbox/>

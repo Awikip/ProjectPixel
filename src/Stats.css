@@ -1,17 +1,9 @@
-dt {
-  padding-top: 0.7rem;
-  padding-bottom: 2.3rem;
-}
-
 .stats-container {
-  display: flex;
   flex-direction: row;
+  flex-flow: row;
 }
 
-.stats-counter {
-  padding-left: 33%;
-}
-
-.stats {
-  padding-left: 5%;
+li {
+  list-style-type: none;
+  margin-bottom: 1rem;
 }
