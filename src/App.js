@@ -4,8 +4,8 @@ import city from './images/city.png';
 import Header from './Header.js';
 import Charselect from './Charbox.js';
 import StatList from './Statsbox.js';
-import Eqbox from './Eqbox.js';
-import Compbox from './Compbox.js';
+import Eqselect from './Eqbox.js';
+import Compselect from './Compbox.js';
 import Cornerbox from './Cornerbox.js';
 
 function App() {
@@ -19,8 +19,12 @@ function App() {
         <StatList />
       </div>
       <div className="bottom-box">
-        <Eqbox/>
-        <Compbox/>
+        <Eqselect images={[
+          lahksa, city
+        ]} />
+        <Compselect images={[
+          lahksa, city
+        ]} />
         <Cornerbox/>
       </div>
     </div>
