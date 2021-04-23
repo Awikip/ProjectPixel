@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './Header.css';
 import lahksa from './images/lahksa.gif';
 

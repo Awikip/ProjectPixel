@@ -5,7 +5,17 @@
   flex-flow: row;
 }
 
-li {
-  list-style-type: none;
-  margin-bottom: 1rem;
+.stats-name {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stats-amount {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stats-button {
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
 }
