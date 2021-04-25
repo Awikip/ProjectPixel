@@ -1,7 +1,7 @@
 function Cornerbox() {
   return (
     <div>
-      <h4>WHAT DO WE PUT HERE HUH?????</h4>
+      <h4>Generate</h4>
     </div>
   );
 }
