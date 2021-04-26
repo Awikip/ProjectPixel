@@ -48,85 +48,85 @@ export default function StatList(props) {
   ];
 
   function addStrength() {
-    if (strengthAmount !=10) {
+    if (strengthAmount !==10) {
       setStrengthAmount(strengthAmount+1);
     }
   }
 
   function subtractStrength() {
-    if (strengthAmount !=0) {
+    if (strengthAmount !==0) {
       setStrengthAmount(strengthAmount-1);
     }
   }
 
   function addStamina() {
-    if (staminaAmount !=10) {
+    if (staminaAmount !==10) {
       setStaminaAmount(staminaAmount+1);
     }
   }
 
   function subtractStamina() {
-    if (staminaAmount !=0) {
+    if (staminaAmount !==0) {
       setStaminaAmount(staminaAmount-1);
     }
   }
 
   function addIntelligence() {
-    if (intelligenceAmount !=10) {
+    if (intelligenceAmount !==10) {
       setIntelligenceAmount(intelligenceAmount+1);
     }
   }
 
   function subtractIntelligence() {
-    if (intelligenceAmount !=0) {
+    if (intelligenceAmount !==0) {
       setIntelligenceAmount(intelligenceAmount-1);
     }
   }
 
   function addDexterity() {
-    if (dexterityAmount !=10) {
+    if (dexterityAmount !==10) {
       setDexterityAmount(dexterityAmount+1);
     }
   }
 
   function subtractDexterity() {
-    if (dexterityAmount !=0) {
+    if (dexterityAmount !==0) {
       setDexterityAmount(dexterityAmount-1);
     }
   }
 
   function addTech() {
-    if (techAmount !=10) {
+    if (techAmount !==10) {
       setTechAmount(techAmount+1);
     }
   }
 
   function subtractTech() {
-    if (techAmount !=0) {
+    if (techAmount !==0) {
       setTechAmount(techAmount-1);
     }
   }
 
   function addCharisma() {
-    if (charismaAmount !=10) {
+    if (charismaAmount !==10) {
       setCharismaAmount(charismaAmount+1);
     }
   }
 
   function subtractCharisma() {
-    if (charismaAmount !=0) {
+    if (charismaAmount !==0) {
       setCharismaAmount(charismaAmount-1);
     }
   }
 
   function addBarter() {
-    if (barterAmount !=10) {
+    if (barterAmount !==10) {
       setBarterAmount(barterAmount+1);
     }
   }
 
   function subtractBarter() {
-    if (barterAmount !=0) {
+    if (barterAmount !==0) {
       setBarterAmount(barterAmount-1);
     }
   }
